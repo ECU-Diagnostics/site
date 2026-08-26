@@ -115,6 +115,12 @@ ul, ol { list-style: none; }
   gap: 24px;
 }
 
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -955,9 +961,9 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
     width: 100%;
   }
 
-  .nav .lang-switch {
-    margin-top: 10px;
-    align-self: flex-start;
+  .header__actions .lang-switch {
+    padding: 0 10px;
+    height: 34px;
   }
 
   .grid-3,
