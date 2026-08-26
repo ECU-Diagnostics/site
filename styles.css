@@ -263,6 +263,32 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
 
 .btn--block { width: 100%; }
 
+/* Language switch */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 229, 255, 0.4);
+  background: rgba(0, 229, 255, 0.07);
+  color: var(--cyan);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  box-shadow: 0 0 14px rgba(0, 229, 255, 0.12);
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s, transform 0.15s;
+}
+
+.lang-switch:hover {
+  border-color: var(--cyan);
+  background: rgba(0, 229, 255, 0.14);
+  box-shadow: var(--glow-cyan);
+  transform: translateY(-1px);
+}
+
 /* Pills */
 .pills {
   display: flex;
@@ -927,6 +953,11 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
   .nav .btn {
     margin-top: 12px;
     width: 100%;
+  }
+
+  .nav .lang-switch {
+    margin-top: 10px;
+    align-self: flex-start;
   }
 
   .grid-3,
