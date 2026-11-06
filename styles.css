@@ -605,7 +605,7 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
   margin-bottom: 24px;
 }
 
-.program li {
+.program > li {
   counter-increment: p;
   display: grid;
   grid-template-columns: 40px 1fr;
@@ -614,9 +614,9 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.program li:last-child { border-bottom: 0; }
+.program > li:last-child { border-bottom: 0; }
 
-.program li::before {
+.program > li::before {
   content: counter(p, decimal-leading-zero);
   font-size: 0.8125rem;
   font-weight: 800;
@@ -893,6 +893,67 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
   color: var(--cyan);
   text-shadow: 0 0 14px rgba(0, 229, 255, 0.5);
 }
+
+
+.program__points {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 8px 0 0;
+  list-style: none;
+}
+.program .program__points li {
+  display: block;
+  position: relative;
+  padding: 0 0 0 16px;
+  border: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--text);
+  opacity: 0.88;
+}
+.program .program__points li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--purple);
+  text-shadow: none;
+}
+
+.pill--start { color: var(--text); border-color: var(--line-strong); background: rgba(0, 229, 255, 0.08); }
+
+.course-more { margin-top: 40px; }
+.course-more .kicker { margin-bottom: 14px; }
+.course-more .card h3 { font-size: 1.05rem; margin-bottom: 14px; }
+.course-more .ticks { margin-bottom: 0; }
+
+.faq { margin-top: 40px; max-width: 760px; }
+.faq__item { border-bottom: 1px solid var(--line); }
+.faq__item summary {
+  cursor: pointer;
+  padding: 16px 28px 16px 0;
+  font-weight: 700;
+  font-size: 0.95rem;
+  list-style: none;
+  position: relative;
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: 14px;
+  color: var(--cyan);
+  font-weight: 800;
+}
+.faq__item[open] summary::after { content: "−"; }
+.faq__item p { padding: 0 0 16px; color: var(--muted); font-size: 0.9rem; line-height: 1.55; }
+.faq .btn { margin-top: 24px; }
 
 /* Responsive */
 @media (max-width: 960px) {
