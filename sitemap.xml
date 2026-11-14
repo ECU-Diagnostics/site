@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://ecu-diagnostics-kg.com/</loc>
     <lastmod>2026-11-15</lastmod>
@@ -18,5 +18,85 @@
     <loc>https://ecu-diagnostics-kg.com/privacy.html</loc>
     <lastmod>2026-11-15</lastmod>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecu-diagnostics-kg.com/video/</loc>
+  </url>
+  <url>
+    <loc>https://ecu-diagnostics-kg.com/video/zapis-na-kurs-avtoelektrik.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://ecu-diagnostics-kg.com/assets/videos/video-4.jpg</video:thumbnail_loc>
+      <video:title>Курс автоэлектрик + чип-тюнинг в Бишкеке — записывайтесь</video:title>
+      <video:description>Как проходят занятия на курсе «Автоэлектрик + чип-тюнинг» в Бишкеке: диагностика на живом оборудовании, без слайдов и воды. 12 дней по 5 часов, практика на машинах и блоках управления.</video:description>
+      <video:content_loc>https://ecu-diagnostics-kg.com/assets/videos/video-4.mp4</video:content_loc>
+      <video:duration>19</video:duration>
+      <video:publication_date>2026-08-26T11:28:15+06:00</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://ecu-diagnostics-kg.com/video/generator-signalov-bosch.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://ecu-diagnostics-kg.com/assets/videos/video-2.jpg</video:thumbnail_loc>
+      <video:title>Генератор сигналов Bosch: эмуляция датчиков и проверка цепей</video:title>
+      <video:description>Работа с генератором сигналов Bosch на курсе автоэлектрика: эмуляция датчиков и проверка электрических цепей автомобиля.</video:description>
+      <video:content_loc>https://ecu-diagnostics-kg.com/assets/videos/video-2.mp4</video:content_loc>
+      <video:duration>8</video:duration>
+      <video:publication_date>2026-08-26T11:28:15+06:00</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://ecu-diagnostics-kg.com/video/mazda-immo-off.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://ecu-diagnostics-kg.com/assets/videos/video-3.jpg</video:thumbnail_loc>
+      <video:title>Mazda 2/3 — отключение иммобилайзера через блок управления</video:title>
+      <video:description>Программное отключение иммобилайзера на Mazda 2 и Mazda 3 через блок управления двигателем. Ключи не изготавливаем и не привязываем.</video:description>
+      <video:content_loc>https://ecu-diagnostics-kg.com/assets/videos/video-3.mp4</video:content_loc>
+      <video:duration>10</video:duration>
+      <video:publication_date>2026-08-26T11:28:15+06:00</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://ecu-diagnostics-kg.com/video/proverka-katushek-i-provodki.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://ecu-diagnostics-kg.com/assets/videos/video-5.jpg</video:thumbnail_loc>
+      <video:title>Проверка катушек зажигания и проводки осциллографом</video:title>
+      <video:description>Проверка катушек зажигания и проводки с эмулятором и осциллографом — один из практических разборов на курсе автоэлектрика в Бишкеке.</video:description>
+      <video:content_loc>https://ecu-diagnostics-kg.com/assets/videos/video-5.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-08-26T11:28:15+06:00</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://ecu-diagnostics-kg.com/video/diagnosticheskiy-stend.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://ecu-diagnostics-kg.com/assets/videos/video-6.jpg</video:thumbnail_loc>
+      <video:title>Диагностический стенд: ЭБУ, дроссельная заслонка, педаль газа</video:title>
+      <video:description>Учебный диагностический стенд: блок управления двигателем, электронная дроссельная заслонка и педаль газа. На нём ученики отрабатывают поиск неисправностей.</video:description>
+      <video:content_loc>https://ecu-diagnostics-kg.com/assets/videos/video-6.mp4</video:content_loc>
+      <video:duration>7</video:duration>
+      <video:publication_date>2026-08-26T11:28:15+06:00</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://ecu-diagnostics-kg.com/video/praktika-uchenikov.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://ecu-diagnostics-kg.com/assets/videos/video-7.jpg</video:thumbnail_loc>
+      <video:title>Практика учеников курса автоэлектрика</video:title>
+      <video:description>Живая работа учеников курса автоэлектрика за столом с оборудованием: замеры, схемы, поиск неисправностей.</video:description>
+      <video:content_loc>https://ecu-diagnostics-kg.com/assets/videos/video-7.mp4</video:content_loc>
+      <video:duration>21</video:duration>
+      <video:publication_date>2026-08-26T11:28:15+06:00</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://ecu-diagnostics-kg.com/video/ecu-diagnostics-bishkek.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://ecu-diagnostics-kg.com/assets/videos/video-1.jpg</video:thumbnail_loc>
+      <video:title>ECU Diagnostics — сервис и обучение автоэлектрике в Бишкеке</video:title>
+      <video:description>ECU Diagnostics: курсы автоэлектрика и чип-тюнинга, диагностика и ремонт автоэлектрики и блоков управления. Бишкек, ул. Лущихина 99а.</video:description>
+      <video:content_loc>https://ecu-diagnostics-kg.com/assets/videos/video-1.mp4</video:content_loc>
+      <video:duration>11</video:duration>
+      <video:publication_date>2026-08-26T11:28:15+06:00</video:publication_date>
+    </video:video>
   </url>
 </urlset>
