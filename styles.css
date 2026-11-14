@@ -889,6 +889,25 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
   transition: color 0.15s, text-shadow 0.15s;
 }
 
+/* Реквизиты ИП в подвале: подпись слева, значение справа; на телефоне — друг под другом */
+.footer__req {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.footer__req dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 18px;
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.footer__req dt { font-weight: 600; }
+.footer__req dd { margin: 0; }
+.footer__req a { color: inherit; }
+
 .footer__links a:hover {
   color: var(--cyan);
   text-shadow: 0 0 14px rgba(0, 229, 255, 0.5);
@@ -1043,6 +1062,8 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
   .banner { flex-direction: column; align-items: flex-start; }
   .banner .btn { width: 100%; }
   .footer__row { flex-direction: column; text-align: center; }
+  .footer__req dl { grid-template-columns: 1fr; gap: 2px; text-align: center; }
+  .footer__req dd { margin-bottom: 8px; }
   .brand { justify-content: center; }
 }
 
