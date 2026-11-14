@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ecu-diagnostics-kg.com/sitemap.xml
