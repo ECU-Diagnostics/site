@@ -45,11 +45,11 @@
     </video:video>
   </url>
   <url>
-    <loc>https://ecu-diagnostics-kg.com/video/mazda-immo-off.html</loc>
+    <loc>https://ecu-diagnostics-kg.com/video/mazda-immobilizer.html</loc>
     <video:video>
       <video:thumbnail_loc>https://ecu-diagnostics-kg.com/assets/videos/video-3.jpg</video:thumbnail_loc>
-      <video:title>Mazda 2/3 — отключение иммобилайзера через блок управления</video:title>
-      <video:description>Программное отключение иммобилайзера на Mazda 2 и Mazda 3 через блок управления двигателем. Ключи не изготавливаем и не привязываем.</video:description>
+      <video:title>Mazda 2/3 — иммобилайзер: работа через блок управления</video:title>
+      <video:description>Работа с системой иммобилайзера на Mazda 2 и Mazda 3 через блок управления двигателем. Ключи не изготавливаем и не привязываем.</video:description>
       <video:content_loc>https://ecu-diagnostics-kg.com/assets/videos/video-3.mp4</video:content_loc>
       <video:duration>10</video:duration>
       <video:publication_date>2026-08-26T11:28:15+06:00</video:publication_date>
