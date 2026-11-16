@@ -67,17 +67,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://ecu-diagnostics-kg.com/video/praktika-uchenikov.html</loc>
-    <video:video>
-      <video:thumbnail_loc>https://ecu-diagnostics-kg.com/assets/videos/video-7.jpg</video:thumbnail_loc>
-      <video:title>Практика учеников курса автоэлектрика</video:title>
-      <video:description>Живая работа учеников курса автоэлектрика за столом с оборудованием: замеры, схемы, поиск неисправностей.</video:description>
-      <video:content_loc>https://ecu-diagnostics-kg.com/assets/videos/video-7.mp4</video:content_loc>
-      <video:duration>21</video:duration>
-      <video:publication_date>2026-08-26T11:28:15+06:00</video:publication_date>
-    </video:video>
-  </url>
-  <url>
     <loc>https://ecu-diagnostics-kg.com/video/ecu-diagnostics-bishkek.html</loc>
     <video:video>
       <video:thumbnail_loc>https://ecu-diagnostics-kg.com/assets/videos/video-1.jpg</video:thumbnail_loc>
