@@ -21,6 +21,7 @@
   <div class="bg-glow bg-glow--b" aria-hidden="true"></div>
   <div class="bg-grid" aria-hidden="true"></div>
 
+  <a class="ticker" href="index.html" aria-label="Русский"><div class="ticker__track"><span>Орус тилинде окуу үчүн жогору жактагы 🌐 RU баскычын басыңыз</span><span aria-hidden="true">•</span><span>Сайт на русском — нажмите кнопку 🌐 RU вверху справа</span><span aria-hidden="true">•</span><span>Орус тилинде окуу үчүн жогору жактагы 🌐 RU баскычын басыңыз</span><span aria-hidden="true">•</span><span>Сайт на русском — нажмите кнопку 🌐 RU вверху справа</span><span aria-hidden="true">•</span><span aria-hidden="true" class="ticker__dup"><span>Орус тилинде окуу үчүн жогору жактагы 🌐 RU баскычын басыңыз</span><span aria-hidden="true">•</span><span>Сайт на русском — нажмите кнопку 🌐 RU вверху справа</span><span aria-hidden="true">•</span><span>Орус тилинде окуу үчүн жогору жактагы 🌐 RU баскычын басыңыз</span><span aria-hidden="true">•</span><span>Сайт на русском — нажмите кнопку 🌐 RU вверху справа</span><span aria-hidden="true">•</span></span></div></a>
   <header class="header" id="header">
     <div class="wrap header__row">
       <a href="#top" class="brand">
@@ -419,8 +420,8 @@
                 <circle cx="16" cy="8" r="1.4" fill="currentColor"/>
               </svg>
             </div>
-            <h3>SRS Airbag · crash data</h3>
-            <p>SRS / AIRBAG блокторунан crash data өчүрүү. Кырсыктан же модуль алмаштырылгандан кийин коопсуздук жаздыктарынын каталарын тазалоо.</p>
+            <h3>SRS / Airbag</h3>
+            <p>SRS / Airbag блокторун текшерүү жана оңдоо. Коопсуздук жаздыктары иштегенден же модуль алмаштырылгандан кийин системаны калыбына келтирүү, датчиктерди жана зымдарды текшерүү.</p>
           </article>
           <article class="card">
             <div class="card__ico" aria-hidden="true">
@@ -491,6 +492,21 @@
             <span class="muted contact__hint">Лущихин көч. 99а</span>
           </div>
         </div>
+        <form class="card leadform" id="lead" data-lang="ky" novalidate hidden>
+          <h3>Өтүнмө калтыруу</h3>
+          <p class="muted">Толтуруңуз — өтүнмө дароо бизге Telegram'га келет. Иш убактысында жооп беребиз.</p>
+          <div class="leadform__grid">
+            <label>Атыңыз<input name="name" maxlength="60" autocomplete="name" required /></label>
+            <label>Телефон же Telegram<input name="contact" maxlength="60" placeholder="+996 … же @username" autocomplete="tel" required /></label>
+            <label>Эмне керек<select name="need"><option value="course">Курс</option><option value="diag">Диагностика</option><option value="repair">Оңдоо</option><option value="other">Башка</option></select></label>
+            <label>Унаа жана жылы<input name="car" maxlength="80" placeholder="мисалы, Toyota Camry 2015" /></label>
+          </div>
+          <label>Комментарий<textarea name="msg" maxlength="600" rows="3"></textarea></label>
+          <label class="leadform__hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off" /></label>
+          <label class="leadform__consent"><input type="checkbox" name="consent" required /> <span><a href="privacy.html" target="_blank">Купуялык саясатына</a> ылайык маалыматтарымды иштетүүгө макулмун</span></label>
+          <button class="btn btn--primary" type="submit">Өтүнмө жөнөтүү</button>
+          <p class="leadform__status muted" role="status" data-ok="Рахмат! Өтүнмө жөнөтүлдү, жакында байланышабыз." data-err="Жөнөтүлгөн жок. Бизге Telegram'га жазыңыз: @Ecu_diagnostics" data-bad="Атыңызды, телефонуңузду же Telegram'дагы @username'иңизди жазып, макулдукту белгилеңиз." data-wait="Өтө көп өтүнмө. Бир мүнөттөн кийин кайталаңыз."></p>
+        </form>
         <div class="banner">
           <div>
             <h3>Курс кызыктырабы же авто боюнча тапшырма барбы?</h3>

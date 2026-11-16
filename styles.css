@@ -1075,3 +1075,33 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
   .hero__glow { animation: none; }
   .btn:hover, .card:hover { transform: none; }
 }
+
+/* Форма заявки */
+.leadform { margin-bottom: 20px; gap: 14px; }
+.leadform h3 { margin: 0; }
+.leadform p { margin: 0; }
+.leadform__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.leadform label { display: flex; flex-direction: column; gap: 6px; font-size: 0.85rem; font-weight: 600; color: var(--muted); }
+.leadform input, .leadform select, .leadform textarea {
+  font: inherit; font-size: 1rem; font-weight: 500; color: var(--text);
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 10px; padding: 11px 12px;
+}
+.leadform textarea { resize: vertical; }
+.leadform input:focus, .leadform select:focus, .leadform textarea:focus { outline: none; border-color: var(--line-strong); box-shadow: var(--glow-cyan); }
+.leadform .leadform__consent { flex-direction: row; align-items: flex-start; gap: 10px; font-weight: 500; }
+.leadform__consent input { margin-top: 3px; accent-color: var(--purple); }
+.leadform__consent a { color: var(--cyan); }
+.leadform__hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.leadform .btn { align-self: flex-start; }
+.leadform__status:empty { display: none; }
+@media (max-width: 640px) { .leadform__grid { grid-template-columns: 1fr; } .leadform .btn { align-self: stretch; } }
+
+/* Бегущая строка про смену языка */
+.ticker { display: block; overflow: hidden; background: #e11d2e; color: #fff; font-size: 0.85rem; font-weight: 700; line-height: 30px; height: 30px; white-space: nowrap; }
+.ticker:hover, .ticker:focus-visible { background: #c81726; }
+.ticker:hover .ticker__track, .ticker:focus-visible .ticker__track { animation-play-state: paused; }
+.ticker__track { display: inline-flex; gap: 28px; padding-left: 28px; animation: ticker 32s linear infinite; }
+.ticker__track span, .ticker__dup { display: inline-flex; gap: 28px; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker__track { animation: none; } .ticker__dup { display: none; } }
+.leadform[hidden] { display: none; }

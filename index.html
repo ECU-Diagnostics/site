@@ -21,6 +21,7 @@
   <div class="bg-glow bg-glow--b" aria-hidden="true"></div>
   <div class="bg-grid" aria-hidden="true"></div>
 
+  <a class="ticker" href="index-ky.html" aria-label="Кыргызча"><div class="ticker__track"><span>Сайт на кыргызском — нажмите кнопку 🌐 KG вверху справа</span><span aria-hidden="true">•</span><span>Кыргыз тилинде окуу үчүн жогору жактагы 🌐 KG баскычын басыңыз</span><span aria-hidden="true">•</span><span>Сайт на кыргызском — нажмите кнопку 🌐 KG вверху справа</span><span aria-hidden="true">•</span><span>Кыргыз тилинде окуу үчүн жогору жактагы 🌐 KG баскычын басыңыз</span><span aria-hidden="true">•</span><span aria-hidden="true" class="ticker__dup"><span>Сайт на кыргызском — нажмите кнопку 🌐 KG вверху справа</span><span aria-hidden="true">•</span><span>Кыргыз тилинде окуу үчүн жогору жактагы 🌐 KG баскычын басыңыз</span><span aria-hidden="true">•</span><span>Сайт на кыргызском — нажмите кнопку 🌐 KG вверху справа</span><span aria-hidden="true">•</span><span>Кыргыз тилинде окуу үчүн жогору жактагы 🌐 KG баскычын басыңыз</span><span aria-hidden="true">•</span></span></div></a>
   <header class="header" id="header">
     <div class="wrap header__row">
       <a href="#top" class="brand">
@@ -419,8 +420,8 @@
                 <circle cx="16" cy="8" r="1.4" fill="currentColor"/>
               </svg>
             </div>
-            <h3>SRS Airbag · crash data</h3>
-            <p>Удаление crash data с блоков SRS / AIRBAG. Сброс ошибок подушек безопасности после аварии или замены модуля.</p>
+            <h3>SRS / Airbag</h3>
+            <p>Диагностика и ремонт блоков SRS / Airbag. Восстановление работы системы подушек безопасности после срабатывания или замены модуля, проверка датчиков и проводки.</p>
           </article>
           <article class="card">
             <div class="card__ico" aria-hidden="true">
@@ -491,6 +492,21 @@
             <span class="muted contact__hint">ул. Лущихина 99а</span>
           </div>
         </div>
+        <form class="card leadform" id="lead" data-lang="ru" novalidate hidden>
+          <h3>Оставить заявку</h3>
+          <p class="muted">Заполните — заявка сразу придёт нам в Telegram. Ответим в рабочее время.</p>
+          <div class="leadform__grid">
+            <label>Имя<input name="name" maxlength="60" autocomplete="name" required /></label>
+            <label>Телефон или Telegram<input name="contact" maxlength="60" placeholder="+996 … или @username" autocomplete="tel" required /></label>
+            <label>Что нужно<select name="need"><option value="course">Курс</option><option value="diag">Диагностика</option><option value="repair">Ремонт</option><option value="other">Другое</option></select></label>
+            <label>Машина и год<input name="car" maxlength="80" placeholder="например, Toyota Camry 2015" /></label>
+          </div>
+          <label>Комментарий<textarea name="msg" maxlength="600" rows="3"></textarea></label>
+          <label class="leadform__hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off" /></label>
+          <label class="leadform__consent"><input type="checkbox" name="consent" required /> <span>Согласен на обработку данных по <a href="privacy.html" target="_blank">политике конфиденциальности</a></span></label>
+          <button class="btn btn--primary" type="submit">Отправить заявку</button>
+          <p class="leadform__status muted" role="status" data-ok="Спасибо! Заявка отправлена, скоро свяжемся." data-err="Не получилось отправить. Напишите нам в Telegram: @Ecu_diagnostics" data-bad="Укажите имя, телефон или @username в Telegram и отметьте согласие." data-wait="Слишком много заявок подряд. Попробуйте через минуту."></p>
+        </form>
         <div class="banner">
           <div>
             <h3>Интересует курс или есть задача по авто?</h3>
