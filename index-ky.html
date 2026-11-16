@@ -10,9 +10,7 @@
   <link rel="alternate" hreflang="ky" href="https://ecu-diagnostics-kg.com/index-ky.html" />
   <link rel="alternate" hreflang="x-default" href="https://ecu-diagnostics-kg.com/" />
   <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ECU Diagnostics","legalName":"ИП ВИНИЧУК ЮЛИЙ ЮРЬЕВИЧ","url":"https://ecu-diagnostics-kg.com/","telephone":"+996509215762","taxID":"22907199650042","address":{"@type":"PostalAddress","streetAddress":"8 микрорайон 1, квартира 41","addressLocality":"Бишкек","addressRegion":"Октябрьский район","postalCode":"720075","addressCountry":"KG"},"sameAs":["https://www.instagram.com/ecu_diagnostics_julius/","https://t.me/ecu_diag_julius"]}</script>
 </head>
@@ -34,7 +32,7 @@
           <a href="#videos">Видео</a>
           <a href="#services">Кызматтар</a>
           <a href="#about">Биз жөнүндө</a>
-          <a href="#contact" class="btn btn--sm btn--primary">Байланышуу</a>
+          <a href="#lead" class="btn btn--sm btn--primary" data-need="course">Өтүнмө калтыруу</a>
         </nav>
         <a class="lang-switch" href="index.html" aria-label="Русский" title="Русский">🌐 RU</a>
         <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false">
@@ -55,11 +53,11 @@
             слайд эмес. Курстан кийин тапшырманы кантип чечүүнү түшүнөсүң.
           </p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="https://t.me/Ecu_diagnostics" target="_blank" rel="noopener">Курска жазылуу</a>
-            <a class="btn btn--ghost" href="#services">Сервис кызматтары</a>
+            <a class="btn btn--primary" href="#lead" data-need="course">Курска өтүнмө калтыруу</a>
+            <a class="btn btn--ghost" href="https://t.me/Ecu_diagnostics" target="_blank" rel="noopener">Telegram аркылуу жазуу</a>
           </div>
           <div class="pills">
-            <span class="pill pill--start">Башталышы 16-ноябрь</span>
+            <span class="pill pill--start">Башталышы 7-декабрь</span>
             <span class="pill">12 күн · 5 саат</span>
             <span class="pill">55 000 сом</span>
             <span class="pill">Унаада практика</span>
@@ -77,7 +75,7 @@
         <header class="section__head">
           <p class="kicker">Окутуу</p>
           <h2>Курс: автоэлектрик + чип-тюнинг</h2>
-          <p class="section__desc">12 күн · күнүнө 5 саат · Бишкек. Дүйшөмбүдөн жумага чейин, 12:00дөн 17:30га чейин. Башталышы 16-ноябрь, акыркы күнү — 1-декабрь. Күн сайын практика — слайд эмес.</p>
+          <p class="section__desc">12 күн · күнүнө 5 саат · Бишкек. Дүйшөмбүдөн жумага чейин, 12:00дөн 17:30га чейин. Башталышы 7-декабрь, акыркы күнү — 22-декабрь. Күн сайын практика — слайд эмес.</p>
         </header>
 
         <div class="course">
@@ -86,7 +84,7 @@
               <span>12 күн</span>
               <span>5 саат / күн</span>
               <span>Дүйшөмбү–Жума · 12:00–17:30</span>
-              <span>16-ноябрь – 1-декабрь</span>
+              <span>7 – 22-декабрь</span>
             </div>
             <div class="course__price">
               <div class="course__price-main">
@@ -223,8 +221,8 @@
                 <span class="muted">Лущихин көч. 99а</span>
               </div>
               <div class="course__signup">
-                <strong class="course__start-date">КУРС БАШТАЛАТ<br /><span>16-ноябрь · 12:00</span></strong>
-              <a class="btn btn--primary" href="https://t.me/Ecu_diagnostics" target="_blank" rel="noopener">Жазылуу</a>
+                <strong class="course__start-date">КУРС БАШТАЛАТ<br /><span>7-декабрь · 12:00</span></strong>
+              <a class="btn btn--primary" href="#lead" data-need="course">Жазылуу</a>
               </div>
             </div>
           </div>
@@ -289,7 +287,7 @@
           </details>
           <details class="faq__item">
             <summary>Качан башталат жана канча убакытка созулат?</summary>
-            <p>16-ноябрда саат 12:00дө башталат. 12 окуу күнү, дүйшөмбүдөн жумага чейин, акыркы күнү — 1-декабрь.</p>
+            <p>7-декабрда саат 12:00дө башталат. 12 окуу күнү, дүйшөмбүдөн жумага чейин, акыркы күнү — 22-декабрь.</p>
           </details>
           <details class="faq__item">
             <summary>Сабактар кайда өтөт?</summary>
@@ -297,9 +295,9 @@
           </details>
           <details class="faq__item">
             <summary>Кантип жазылса болот?</summary>
-            <p>Telegram же Instagram аркылуу жазыңыз — жооп берип, сизди жазып алабыз.</p>
+            <p>Сайтта <a href="#lead" data-need="course">өтүнмө калтырыңыз</a> же Telegram, Instagram аркылуу жазыңыз — жооп берип, сизди жазып алабыз.</p>
           </details>
-          <a class="btn btn--primary" href="https://t.me/Ecu_diagnostics" target="_blank" rel="noopener">Курска жазылуу</a>
+          <a class="btn btn--primary" href="#lead" data-need="course">Курска өтүнмө калтыруу</a>
         </div>
       </div>
     </section>
@@ -431,6 +429,10 @@
             <p>Чынжырлар, датчиктер, өткөргүчтөр, жабдуу орнотуу — схемадан жыйынтыкка чейин.</p>
           </article>
         </div>
+        <div class="svc-cta">
+          <a class="btn btn--primary" href="#lead" data-need="diag">Диагностикага жазылуу</a>
+          <a class="btn btn--ghost" href="tel:+996509215762">Чалуу: +996 509 215 762</a>
+        </div>
       </div>
     </section>
 
@@ -543,6 +545,11 @@
     </div>
   </footer>
 
+    <nav class="mbar" aria-label="Өтүнмө">
+    <a class="mbar__main" href="#lead">Өтүнмө</a>
+    <a href="https://t.me/Ecu_diagnostics" target="_blank" rel="noopener">Telegram</a>
+    <a href="tel:+996509215762">Чалуу</a>
+  </nav>
   <script src="script.js"></script>
 </body>
 </html>

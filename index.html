@@ -10,9 +10,7 @@
   <link rel="alternate" hreflang="ky" href="https://ecu-diagnostics-kg.com/index-ky.html" />
   <link rel="alternate" hreflang="x-default" href="https://ecu-diagnostics-kg.com/" />
   <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ECU Diagnostics","legalName":"ИП ВИНИЧУК ЮЛИЙ ЮРЬЕВИЧ","url":"https://ecu-diagnostics-kg.com/","telephone":"+996509215762","taxID":"22907199650042","address":{"@type":"PostalAddress","streetAddress":"8 микрорайон 1, квартира 41","addressLocality":"Бишкек","addressRegion":"Октябрьский район","postalCode":"720075","addressCountry":"KG"},"sameAs":["https://www.instagram.com/ecu_diagnostics_julius/","https://t.me/ecu_diag_julius"]}</script>
 </head>
@@ -34,7 +32,7 @@
           <a href="#videos">Видео</a>
           <a href="#services">Услуги</a>
           <a href="#about">О нас</a>
-          <a href="#contact" class="btn btn--sm btn--primary">Связаться</a>
+          <a href="#lead" class="btn btn--sm btn--primary" data-need="course">Оставить заявку</a>
         </nav>
         <a class="lang-switch" href="index-ky.html" aria-label="Кыргызча" title="Кыргызча">🌐 KG</a>
         <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false">
@@ -55,11 +53,11 @@
             не слайды. После курса понимаешь, что делать с задачей.
           </p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="https://t.me/Ecu_diagnostics" target="_blank" rel="noopener">Записаться на курс</a>
-            <a class="btn btn--ghost" href="#services">Услуги сервиса</a>
+            <a class="btn btn--primary" href="#lead" data-need="course">Оставить заявку на курс</a>
+            <a class="btn btn--ghost" href="https://t.me/Ecu_diagnostics" target="_blank" rel="noopener">Написать в Telegram</a>
           </div>
           <div class="pills">
-            <span class="pill pill--start">Старт 16 ноября</span>
+            <span class="pill pill--start">Старт 7 декабря</span>
             <span class="pill">12 дней · 5 часов</span>
             <span class="pill">55 000 сом</span>
             <span class="pill">Практика на авто</span>
@@ -77,7 +75,7 @@
         <header class="section__head">
           <p class="kicker">Обучение</p>
           <h2>Курс: автоэлектрик + чип-тюнинг</h2>
-          <p class="section__desc">12 дней · 5 часов занятий в день · Бишкек. Понедельник–пятница, с 12:00 до 17:30. Старт 16 ноября, последний день — 1 декабря. Практика каждый день — не слайды.</p>
+          <p class="section__desc">12 дней · 5 часов занятий в день · Бишкек. Понедельник–пятница, с 12:00 до 17:30. Старт 7 декабря, последний день — 22 декабря. Практика каждый день — не слайды.</p>
         </header>
 
         <div class="course">
@@ -86,7 +84,7 @@
               <span>12 дней</span>
               <span>5 часов занятий в день</span>
               <span>Пн–Пт · 12:00–17:30</span>
-              <span>16 ноября – 1 декабря</span>
+              <span>7 – 22 декабря</span>
             </div>
             <div class="course__price">
               <div class="course__price-main">
@@ -223,8 +221,8 @@
                 <span class="muted">ул. Лущихина 99а</span>
               </div>
               <div class="course__signup">
-                <strong class="course__start-date">НАЧАЛО КУРСА<br /><span>16 ноября · 12:00</span></strong>
-              <a class="btn btn--primary" href="https://t.me/Ecu_diagnostics" target="_blank" rel="noopener">Успейте записаться</a>
+                <strong class="course__start-date">НАЧАЛО КУРСА<br /><span>7 декабря · 12:00</span></strong>
+              <a class="btn btn--primary" href="#lead" data-need="course">Успейте записаться</a>
               </div>
             </div>
           </div>
@@ -289,7 +287,7 @@
           </details>
           <details class="faq__item">
             <summary>Когда старт и сколько длится курс?</summary>
-            <p>Старт 16 ноября в 12:00. 12 учебных дней, понедельник–пятница, последний день — 1 декабря.</p>
+            <p>Старт 7 декабря в 12:00. 12 учебных дней, понедельник–пятница, последний день — 22 декабря.</p>
           </details>
           <details class="faq__item">
             <summary>Где проходят занятия?</summary>
@@ -297,9 +295,9 @@
           </details>
           <details class="faq__item">
             <summary>Как записаться?</summary>
-            <p>Напишите в Telegram или Instagram — ответим и запишем вас.</p>
+            <p>Оставьте <a href="#lead" data-need="course">заявку на сайте</a> или напишите в Telegram или Instagram — ответим и запишем вас.</p>
           </details>
-          <a class="btn btn--primary" href="https://t.me/Ecu_diagnostics" target="_blank" rel="noopener">Записаться на курс</a>
+          <a class="btn btn--primary" href="#lead" data-need="course">Оставить заявку на курс</a>
         </div>
       </div>
     </section>
@@ -431,6 +429,10 @@
             <p>Цепи, датчики, проводка, установка оборудования — от схемы до результата.</p>
           </article>
         </div>
+        <div class="svc-cta">
+          <a class="btn btn--primary" href="#lead" data-need="diag">Записаться на диагностику</a>
+          <a class="btn btn--ghost" href="tel:+996509215762">Позвонить: +996 509 215 762</a>
+        </div>
       </div>
     </section>
 
@@ -543,6 +545,11 @@
     </div>
   </footer>
 
+    <nav class="mbar" aria-label="Заявка">
+    <a class="mbar__main" href="#lead">Заявка</a>
+    <a href="https://t.me/Ecu_diagnostics" target="_blank" rel="noopener">Telegram</a>
+    <a href="tel:+996509215762">Позвонить</a>
+  </nav>
   <script src="script.js"></script>
 </body>
 </html>

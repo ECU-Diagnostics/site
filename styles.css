@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/fonts/manrope.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ========== ECU Diagnostics — neon glow system ========== */
 :root {
   --bg: #05070c;
@@ -1105,3 +1113,35 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .ticker__track { animation: none; } .ticker__dup { display: none; } }
 .leadform[hidden] { display: none; }
+
+/* Кнопки под услугами */
+.svc-cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
+
+/* Нижняя панель на телефоне: заявка, Telegram, звонок */
+.mbar { display: none; }
+@media (max-width: 760px) {
+  .mbar {
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 8px;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+    background: rgba(5, 7, 12, 0.94); backdrop-filter: blur(14px);
+    border-top: 1px solid var(--line);
+  }
+  .mbar a {
+    display: flex; align-items: center; justify-content: center; min-height: 46px;
+    border-radius: 12px; font-weight: 700; font-size: 0.95rem; color: var(--text);
+    background: var(--surface-solid); border: 1px solid var(--line);
+  }
+  .mbar .mbar__main { background: var(--grad); color: #0a0612; border: 0; }
+  body:has(.mbar) { padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+}
+#lead { scroll-margin-top: calc(var(--header) + 16px); }
+
+/* Телефон: сначала заголовок и кнопка заявки, логотип ниже и меньше */
+@media (max-width: 760px) {
+  .hero { padding: 20px 0 40px; }
+  .hero__art { order: 2; min-height: 0; }
+  .hero__logo { width: min(170px, 50%); }
+  .hero__glow { display: none; }
+  .hero__cta .btn { flex: 1 1 100%; justify-content: center; }
+}

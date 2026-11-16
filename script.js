@@ -63,3 +63,22 @@
     }
   });
 })();
+
+(function () {
+  const form = document.getElementById("lead");
+  if (!form) return;
+  const sel = form.querySelector("select[name=need]");
+  const setNeed = (v) => { if (sel && v && sel.querySelector('option[value="' + v + '"]')) sel.value = v; };
+  setNeed(new URLSearchParams(location.search).get("need"));
+  document.querySelectorAll("[data-need]").forEach((a) => {
+    a.addEventListener("click", () => {
+      setNeed(a.dataset.need);
+      if (location.hash === "#lead") setTimeout(() => form.querySelector("input[name=name]")?.focus({ preventScroll: true }), 400);
+    });
+  });
+  const focusName = () => {
+    if (location.hash === "#lead") setTimeout(() => form.querySelector("input[name=name]")?.focus({ preventScroll: true }), 400);
+  };
+  window.addEventListener("hashchange", focusName);
+  focusName();
+})();
