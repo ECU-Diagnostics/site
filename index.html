@@ -63,11 +63,22 @@
             <span class="pill">Практика на авто</span>
           </div>
         </div>
-        <div class="hero__art">
-          <div class="hero__glow" aria-hidden="true"></div>
-          <img src="assets/logo.svg" alt="ECU Diagnostics" class="hero__logo" width="400" height="460" />
+        <div class="hero__form">
+        <form class="card leadform leadform--hero" id="lead" data-lang="ru" novalidate>
+          <h3>Запишитесь на курс</h3>
+          <p class="muted">Оставьте имя и телефон — перезвоним и ответим на вопросы. Займёт 30 секунд.</p>
+          <div class="leadform__grid">
+            <label>Имя<input name="name" maxlength="60" autocomplete="name" required /></label>
+            <label>Телефон или Telegram<input name="contact" maxlength="60" placeholder="+996 … или @username" autocomplete="tel" required /></label>
+            <label>Что нужно<select name="need"><option value="course">Курс</option><option value="diag">Диагностика</option><option value="repair">Ремонт</option><option value="other">Другое</option></select></label>
+          </div>
+          <label>Вопрос или машина <span class="opt">(необязательно)</span><textarea name="msg" maxlength="600" rows="2" placeholder="например: Camry 2015, интересует курс"></textarea></label>
+          <label class="leadform__hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off" /></label>
+          <label class="leadform__consent"><input type="checkbox" name="consent" required /> <span>Согласен на обработку данных по <a href="privacy.html" target="_blank">политике конфиденциальности</a></span></label>
+          <button class="btn btn--primary" type="submit">Оставить заявку</button>
+          <p class="leadform__status muted" role="status" data-ok="Спасибо! Заявка отправлена, скоро свяжемся." data-err="Не получилось отправить. Напишите нам в Telegram: @Ecu_diagnostics" data-bad="Укажите имя, телефон или @username в Telegram и отметьте согласие." data-wait="Слишком много заявок подряд. Попробуйте через минуту."></p>
+        </form>
         </div>
-      </div>
     </section>
 
     <section class="section section--tint" id="courses">
@@ -169,8 +180,8 @@
                 </ul>
               </li>
               <li>
-                <strong>Разблокировка и закрытые блоки</strong>
-                <span>Когда стандартный путь закрыт — рабочие подходы на практике.</span>
+                <strong>Защищённые и закрытые блоки</strong>
+                <span>Как работать с блоками, защищёнными производителем, — на практике.</span>
                 <ul class="program__points">
                   <li>Почему блок закрыт и как это определить</li>
                   <li>Переход на Bench / Boot, когда по OBD блок не пускает</li>
@@ -399,8 +410,8 @@
             <div class="card__ico" aria-hidden="true">
               <svg viewBox="0 0 32 32" fill="none"><path d="M8 14V10a2 2 0 012-2h12a2 2 0 012 2v4M8 18v4a2 2 0 002 2h12a2 2 0 002-2v-4M6 16h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
-            <h3>Разблокировка ЭБУ</h3>
-            <p>Работа с закрытыми блоками, когда стандартные решения не проходят.</p>
+            <h3>Работа с защищёнными ЭБУ</h3>
+            <p>Чтение и запись блоков, закрытых производителем, когда стандартные решения не проходят.</p>
           </article>
           <article class="card">
             <div class="card__ico" aria-hidden="true">
@@ -494,21 +505,6 @@
             <span class="muted contact__hint">ул. Лущихина 99а</span>
           </div>
         </div>
-        <form class="card leadform" id="lead" data-lang="ru" novalidate>
-          <h3>Оставить заявку</h3>
-          <p class="muted">Заполните — заявка сразу придёт нам в Telegram. Ответим в рабочее время.</p>
-          <div class="leadform__grid">
-            <label>Имя<input name="name" maxlength="60" autocomplete="name" required /></label>
-            <label>Телефон или Telegram<input name="contact" maxlength="60" placeholder="+996 … или @username" autocomplete="tel" required /></label>
-            <label>Что нужно<select name="need"><option value="course">Курс</option><option value="diag">Диагностика</option><option value="repair">Ремонт</option><option value="other">Другое</option></select></label>
-            <label>Машина и год<input name="car" maxlength="80" placeholder="например, Toyota Camry 2015" /></label>
-          </div>
-          <label>Комментарий<textarea name="msg" maxlength="600" rows="3"></textarea></label>
-          <label class="leadform__hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off" /></label>
-          <label class="leadform__consent"><input type="checkbox" name="consent" required /> <span>Согласен на обработку данных по <a href="privacy.html" target="_blank">политике конфиденциальности</a></span></label>
-          <button class="btn btn--primary" type="submit">Отправить заявку</button>
-          <p class="leadform__status muted" role="status" data-ok="Спасибо! Заявка отправлена, скоро свяжемся." data-err="Не получилось отправить. Напишите нам в Telegram: @Ecu_diagnostics" data-bad="Укажите имя, телефон или @username в Telegram и отметьте согласие." data-wait="Слишком много заявок подряд. Попробуйте через минуту."></p>
-        </form>
         <div class="banner">
           <div>
             <h3>Интересует курс или есть задача по авто?</h3>

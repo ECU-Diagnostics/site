@@ -1145,3 +1145,13 @@ h3 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 700; letter-spacing: -
   .hero__glow { display: none; }
   .hero__cta .btn { flex: 1 1 100%; justify-content: center; }
 }
+
+/* Форма заявки на первом экране */
+.hero__form { width: 100%; max-width: 440px; justify-self: end; }
+.leadform--hero { margin: 0; box-shadow: var(--glow-mix); border-color: var(--line-strong); }
+.leadform--hero h3 { font-size: 1.35rem; }
+.leadform--hero .leadform__grid { grid-template-columns: 1fr; }
+.leadform--hero .btn { align-self: stretch; justify-content: center; }
+.leadform .opt { font-weight: 500; opacity: 0.7; }
+@media (max-width: 960px) { .hero__form { justify-self: stretch; max-width: none; } }
+@media (min-width: 961px) { .hero__cta .btn--primary[data-need] { display: none; } }

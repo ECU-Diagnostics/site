@@ -63,11 +63,22 @@
             <span class="pill">Унаада практика</span>
           </div>
         </div>
-        <div class="hero__art">
-          <div class="hero__glow" aria-hidden="true"></div>
-          <img src="assets/logo.svg" alt="ECU Diagnostics" class="hero__logo" width="400" height="460" />
+        <div class="hero__form">
+        <form class="card leadform leadform--hero" id="lead" data-lang="ky" novalidate>
+          <h3>Курска жазылыңыз</h3>
+          <p class="muted">Атыңызды жана телефонуңузду калтырыңыз — чалып, суроолоруңузга жооп беребиз. 30 секунд.</p>
+          <div class="leadform__grid">
+            <label>Атыңыз<input name="name" maxlength="60" autocomplete="name" required /></label>
+            <label>Телефон же Telegram<input name="contact" maxlength="60" placeholder="+996 … же @username" autocomplete="tel" required /></label>
+            <label>Эмне керек<select name="need"><option value="course">Курс</option><option value="diag">Диагностика</option><option value="repair">Оңдоо</option><option value="other">Башка</option></select></label>
+          </div>
+          <label>Суроо же унаа <span class="opt">(милдеттүү эмес)</span><textarea name="msg" maxlength="600" rows="2" placeholder="мисалы: Camry 2015, курс кызыктырат"></textarea></label>
+          <label class="leadform__hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off" /></label>
+          <label class="leadform__consent"><input type="checkbox" name="consent" required /> <span><a href="privacy.html" target="_blank">Купуялык саясатына</a> ылайык маалыматтарымды иштетүүгө макулмун</span></label>
+          <button class="btn btn--primary" type="submit">Өтүнмө калтыруу</button>
+          <p class="leadform__status muted" role="status" data-ok="Рахмат! Өтүнмө жөнөтүлдү, жакында байланышабыз." data-err="Жөнөтүлгөн жок. Бизге Telegram'га жазыңыз: @Ecu_diagnostics" data-bad="Атыңызды, телефонуңузду же Telegram'дагы @username'иңизди жазып, макулдукту белгилеңиз." data-wait="Өтө көп өтүнмө. Бир мүнөттөн кийин кайталаңыз."></p>
+        </form>
         </div>
-      </div>
     </section>
 
     <section class="section section--tint" id="courses">
@@ -169,8 +180,8 @@
                 </ul>
               </li>
               <li>
-                <strong>Разблокировка жана жабык блоктор</strong>
-                <span>Стандарттуу жол жабык болгондо — практикада иштей турган ыкмалар.</span>
+                <strong>Корголгон жана жабык блоктор</strong>
+                <span>Өндүрүүчү коргогон блоктор менен иштөө — практикада.</span>
                 <ul class="program__points">
                   <li>Блок эмне үчүн жабык жана муну кантип аныктоо</li>
                   <li>OBD аркылуу кирүүгө мүмкүн болбосо Bench / Boot ыкмасына өтүү</li>
@@ -399,8 +410,8 @@
             <div class="card__ico" aria-hidden="true">
               <svg viewBox="0 0 32 32" fill="none"><path d="M8 14V10a2 2 0 012-2h12a2 2 0 012 2v4M8 18v4a2 2 0 002 2h12a2 2 0 002-2v-4M6 16h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
-            <h3>ЭБУ разблокировкасы</h3>
-            <p>Стандарттуу чечимдер өтпөгөндө жабык блоктор менен иштөө.</p>
+            <h3>Корголгон ЭБУ менен иштөө</h3>
+            <p>Стандарттуу чечимдер өтпөгөндө өндүрүүчү жапкан блокторду окуу жана жазуу.</p>
           </article>
           <article class="card">
             <div class="card__ico" aria-hidden="true">
@@ -494,21 +505,6 @@
             <span class="muted contact__hint">Лущихин көч. 99а</span>
           </div>
         </div>
-        <form class="card leadform" id="lead" data-lang="ky" novalidate>
-          <h3>Өтүнмө калтыруу</h3>
-          <p class="muted">Толтуруңуз — өтүнмө дароо бизге Telegram'га келет. Иш убактысында жооп беребиз.</p>
-          <div class="leadform__grid">
-            <label>Атыңыз<input name="name" maxlength="60" autocomplete="name" required /></label>
-            <label>Телефон же Telegram<input name="contact" maxlength="60" placeholder="+996 … же @username" autocomplete="tel" required /></label>
-            <label>Эмне керек<select name="need"><option value="course">Курс</option><option value="diag">Диагностика</option><option value="repair">Оңдоо</option><option value="other">Башка</option></select></label>
-            <label>Унаа жана жылы<input name="car" maxlength="80" placeholder="мисалы, Toyota Camry 2015" /></label>
-          </div>
-          <label>Комментарий<textarea name="msg" maxlength="600" rows="3"></textarea></label>
-          <label class="leadform__hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off" /></label>
-          <label class="leadform__consent"><input type="checkbox" name="consent" required /> <span><a href="privacy.html" target="_blank">Купуялык саясатына</a> ылайык маалыматтарымды иштетүүгө макулмун</span></label>
-          <button class="btn btn--primary" type="submit">Өтүнмө жөнөтүү</button>
-          <p class="leadform__status muted" role="status" data-ok="Рахмат! Өтүнмө жөнөтүлдү, жакында байланышабыз." data-err="Жөнөтүлгөн жок. Бизге Telegram'га жазыңыз: @Ecu_diagnostics" data-bad="Атыңызды, телефонуңузду же Telegram'дагы @username'иңизди жазып, макулдукту белгилеңиз." data-wait="Өтө көп өтүнмө. Бир мүнөттөн кийин кайталаңыз."></p>
-        </form>
         <div class="banner">
           <div>
             <h3>Курс кызыктырабы же авто боюнча тапшырма барбы?</h3>
